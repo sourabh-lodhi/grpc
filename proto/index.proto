@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+service TestingService {
+    rpc demo (request) returns (response);
+    rpc test (request) returns (response);
+}
+
+message request {
+    string name = 1;
+    int32 age = 2;
+}
+
+message response {
+    string name = 1;
+    int32 age  = 2;
+    int32 id  = 3;
+}
